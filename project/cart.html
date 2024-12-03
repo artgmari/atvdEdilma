@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Loja São Paulo FC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://logodownload.org/wp-content/uploads/2016/09/sao-paulo-logo-escudo.png" alt="Logo São Paulo FC">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Camisas Masculinas</a>
+                <a href="#">Camisas Femininas</a>
+                <a href="#">Linha Infantil</a>
+                <a href="#">Saiba +</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <h1>Meu Carrinho</h1>
+        
+        <div class="cart-container">
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+
+            <div class="cart-summary">
+                <h2>Resumo do Pedido</h2>
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span id="subtotal">R$ 0,00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Frete</span>
+                    <span id="shipping">R$ 0,00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span id="total">R$ 0,00</span>
+                </div>
+                <button class="checkout-button">Finalizar Compra</button>
+                <a href="index.html" class="continue-shopping">Continuar Comprando</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
+</body>
+</html>
